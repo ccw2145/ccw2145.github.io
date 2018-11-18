@@ -10,7 +10,7 @@ const examples = {
   'example1':
       'To my surprise the worthy landlady wept bitterly over the pieces, and when I spoke of gorgeous objects wherewith to replace her treasure, explained snappishly: ‘Nothing won’t make it good to me!',
   'example2':
-      'While my companion contemplated with a serious and satisfied spirit the magnificent appearances of things, I delighted in investigating their causes.,
+      'While my companion contemplated with a serious and satisfied spirit the magnificent appearances of things, I delighted in investigating their causes.',
   'example3':
       'As long as she stays there, it is all very well.'      
 };
