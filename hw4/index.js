@@ -8,11 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'To my surprise the worthy landlady wept bitterly over the pieces, and when I spoke of gorgeous objects wherewith to replace her treasure, explained snappishly: ‘Nothing won’t make it good to me!',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'While my companion contemplated with a serious and satisfied spirit the magnificent appearances of things, I delighted in investigating their causes.,
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'As long as she stays there, it is all very well.'      
 };
 
 function status(statusText) {
