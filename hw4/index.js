@@ -10,9 +10,9 @@ const examples = {
   'example1':
       'By a window, whose lozenged panes were swept by festoons of ivy, Zeus Gildersedge sat in a cane-backed arm-chair.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'No incidents have hitherto befallen us that would make a figure in a letter.',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'To Mrs. Gardiner, Wickham had one means of affording pleasure, unconnected with his general powers.'      
 };
 
 function status(statusText) {
