@@ -50,7 +50,7 @@ function doPredict(predict) {
   
   score_string = "Predicted RGB Values: ";
   for (var x in result.score) {
-    score_string += " + result.score[x].toFixed(1) + ", "
+    score_string += result.score[x].toFixed(3) + ", "
   }
   //console.log(score_string);
   status(
