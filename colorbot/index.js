@@ -45,12 +45,13 @@ function doPredict(predict) {
   const result = predict(textField.value);
   var c=document.getElementById("myCanvas");
   var ctx=c.getContext("2d");
-  ctx.fillStyle = "'rgba('+ result.score[0] +','+ result.score[1] +','+ result.score[2] + ',255)'";
+  ctx.fillStyle = 'rgba(121,10,4,255)';
+  //ctx.fillStyle = "'rgba('+ result.score[0] +','+ result.score[1] +','+ result.score[2] + ',255)'";
   ctx.fillRect(20,20,100,100);
   
   score_string = "Predicted RGB Values: ";
   for (var x in result.score) {
-    score_string += result.score[x].toFixed(3) + ", "
+    score_string += result.score[x].toFixed() + ", "
   }
   //console.log(score_string);
   status(
