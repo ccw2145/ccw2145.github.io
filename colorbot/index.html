@@ -17,26 +17,27 @@
     <button id="load-model" style="display:none">Load model</button>
   </div>
   <hr>
-  <div>Examples
+  <div>
+    <p>Choose from these examples: </p>
     <select id="example-select" class="form-control">
       <option value="example1">Light Blue</option>
       <option value="example2">Blue</option>
       <option value="example3">Orange</option>
     </select>
-  </div>
-  <hr>
+  
   <div>
-    <textarea id="text-entry">Enter a color name: </textarea>
-  </div>
-  <hr>
-  <div>
-    <span id="status">Standing by.</span>
+    <p>Or enter a color name here: </p>
+    <textarea id="text-entry"></textarea>
   </div>
   
   <div>
     <p>Is this the right color?</p>
     <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
     </canvas>
+  </div>
+  <hr>
+  <div>
+    <span id="status">Standing by.</span>
   </div>
   <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js'></script>
   <script src='index.js'></script>
