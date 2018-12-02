@@ -21,7 +21,6 @@ function status(statusText) {
 }
 /*
 function showMetadata(metadataJSON) {
-  
   document.getElementById('maxLen').textContent =
       metadataJSON['max_len'];
 }
