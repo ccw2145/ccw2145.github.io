@@ -46,7 +46,7 @@ function doPredict(predict) {
   var c=document.getElementById("myCanvas");
   var ctx=c.getContext("2d");
   ctx.fillRect(20,20,100,100);
-  ctx.fillStyle = "rgba(result.score[0],result.score[1],result.score[2], " + 255 + ")";
+  ctx.fillStyle = "rgba(result.score[0] *255,result.score[1] * 255 ,result.score[2] * 255, " + 255 + ")";
   score_string = "Predicted RGB Values: ";
   for (var x in result.score) {
     score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
@@ -122,7 +122,7 @@ class Classifier {
   predict(text) {
     // Convert to lower case and remove all punctuations.
     const inputText =
-        text.trim().toLowerCase().replace(/(\.|\,|\!)/g, '').split(' ');
+        text.trim().toLowerCase().replace(/(\.|\,|\!)/g, '').split('');
     // Look up word indices.
     const inputBuffer = tf.buffer([1, this.maxLen], 'float32');
     for (let i = 0; i < inputText.length; ++i) {
