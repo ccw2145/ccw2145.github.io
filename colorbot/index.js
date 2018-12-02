@@ -19,12 +19,12 @@ function status(statusText) {
   console.log(statusText);
   document.getElementById('status').textContent = statusText;
 }
-/*
+
 function showMetadata(metadataJSON) {
   document.getElementById('maxLen').textContent =
       metadataJSON['max_len'];
 }
-*/
+
 function settextField(text, predict) {
   const textField = document.getElementById('text-entry');
   textField.value = text;
