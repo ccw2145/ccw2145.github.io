@@ -10,9 +10,9 @@ const examples = {
   'example1':
       'Light Blue',
   'example2':
-      'Blue',
+      'Green',
   'example3':
-      'Orange'      
+      'Yellow'      
 };
 
 function status(statusText) {
