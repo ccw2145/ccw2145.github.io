@@ -46,10 +46,10 @@ function doPredict(predict) {
   var c=document.getElementById("myCanvas");
   var ctx=c.getContext("2d");
   ctx.fillRect(20,20,100,100);
-  ctx.fillStyle = "rgba(result.score[0] *255,result.score[1] * 255 ,result.score[2] * 255, " + 255 + ")";
+  ctx.fillStyle = "rgba(result.score[0],result.score[1] ,result.score[2], " + 255 + ")";
   score_string = "Predicted RGB Values: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(1) + ", "
   }
   //console.log(score_string);
   status(
@@ -137,7 +137,10 @@ class Classifier {
     const beginMs = performance.now();
     const predictOut = this.model.predict(input);
     //console.log(predictOut.dataSync());
-    const score = predictOut.dataSync();//[0];
+    var score = new Float32Array(3)
+    score[0] = predictOut.dataSync()[0] * 255;
+    score[1] = predictOut.dataSync()[1] * 255;
+    score[2] = predictOut.dataSync()[2] * 255;
     predictOut.dispose();
     const endMs = performance.now();
     
