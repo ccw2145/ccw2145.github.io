@@ -46,7 +46,7 @@ function doPredict(predict) {
   var c=document.getElementById("myCanvas");
   var ctx=c.getContext("2d");
   //ctx.fillStyle = 'rgba(121,10,4,255)';
-  ctx.fillStyle = "rgba("+score[0]+ ',' + score[1]+ ','  + score[2] + ",255)"
+  ctx.fillStyle = "rgba("+score[0]+ ',' + score[1]+ ','  + score[2] + ",255)";
   ctx.fillRect(20,20,100,100);
   
   score_string = "Predicted RGB Values: ";
