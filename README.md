@@ -3,8 +3,8 @@ This repository contains three applications of recurrent neural network model tr
 
 * color_generator
 
-* colorbot
+* colorbot  
 demo: https://ccw2145.github.io/rnn/colorbot/  
 
-* book_finder 
+* book_finder   
 demo: https://ccw2145.github.io/rnn/bookfinder/  
